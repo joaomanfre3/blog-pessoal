@@ -1,0 +1,95 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+  --font-serif: var(--font-lora), ui-serif, Georgia, serif;
+
+  /* Tema editorial: creme + tinta + acento vinho. Cara de revista. */
+  --color-ink: #1c1917;
+  --color-accent: #9f1239; /* vinho */
+  --color-paper: #faf8f3;
+}
+
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-tap-highlight-color: transparent;
+}
+
+html,
+body {
+  min-height: 100dvh;
+  color: var(--color-ink);
+  background: var(--color-paper);
+}
+
+::selection {
+  background: #fbcfe0;
+  color: #1c1917;
+}
+
+/* ---- Estilo do corpo do post (HTML vindo do Markdown) ---- */
+.prose {
+  font-size: 1.075rem;
+  line-height: 1.8;
+  color: #292524;
+}
+.prose h2 {
+  font-family: var(--font-serif);
+  font-size: 1.6rem;
+  font-weight: 600;
+  margin: 2.25rem 0 0.75rem;
+  letter-spacing: -0.01em;
+}
+.prose h3 {
+  font-family: var(--font-serif);
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin: 1.75rem 0 0.5rem;
+}
+.prose p {
+  margin: 1rem 0;
+}
+.prose ul,
+.prose ol {
+  margin: 1rem 0;
+  padding-left: 1.25rem;
+}
+.prose li {
+  margin: 0.4rem 0;
+}
+.prose ul li {
+  list-style: disc;
+}
+.prose ol li {
+  list-style: decimal;
+}
+.prose a {
+  color: var(--color-accent);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+.prose strong {
+  font-weight: 700;
+  color: #1c1917;
+}
+.prose blockquote {
+  border-left: 3px solid var(--color-accent);
+  padding-left: 1.1rem;
+  margin: 1.5rem 0;
+  font-family: var(--font-serif);
+  font-style: italic;
+  font-size: 1.2rem;
+  color: #57534e;
+}
+.prose code {
+  background: #f0ede6;
+  padding: 0.15rem 0.4rem;
+  border-radius: 0.35rem;
+  font-size: 0.9em;
+}
+.prose hr {
+  border: none;
+  border-top: 1px solid #e7e2d8;
+  margin: 2rem 0;
+}
