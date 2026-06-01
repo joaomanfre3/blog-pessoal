@@ -56,4 +56,4 @@ Pronto pra Vercel — importe o repositório, build padrão (`next build`), zero
 
 ---
 
-Projeto **#2** da coleção [awesome-ideas](https://github.com/alonefps/awesome-ideas). Feito por [@joaomanfre3](https://github.com/joaomanfre3).
+Feito por [@joaomanfre3](https://github.com/joaomanfre3).
